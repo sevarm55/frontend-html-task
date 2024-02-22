@@ -1,0 +1,143 @@
+.sidebar {
+  width: 210px;
+  height: 98vh;
+  background-color: #fff;
+  padding: 1px;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin-left: 5px;
+
+  &.closed {
+    width: 70px;
+
+    svg {
+      font-size: 20px;
+    }
+
+    button {
+        right: -50px;
+        background-color: #fff;
+    }
+
+    .logoBox {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    span {
+      display: none;
+    }
+
+    .routes_menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .routesItem {
+      border-radius: 5px;
+    }
+
+    .bottomRoutesItem {
+      border-radius: 5px;
+    }
+
+    .sidebarTop {
+      gap: 20px;
+    }
+  }
+}
+
+.sideBarContent {
+  height: 100%;
+  background-color: #fff;
+  border: 2px solid #E2E8F0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  cursor: pointer;
+
+  span {
+    color: #ff8502;
+    font-weight: bold;
+  }
+
+  img {
+    width: 40px;
+  }
+}
+
+.sidebarTop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  button {
+    position: absolute;
+    right: -25px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E2E8F0;
+  }
+}
+
+.routes_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  svg {
+    font-size: 20px;
+  }
+
+  .routesItem {
+    padding: 12px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #5f7087;
+
+    &:hover {
+      background-color: #e2e8eb;
+    }
+  }
+}
+
+.bottomRoutesMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .bottomRoutesItem {
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #5f7087;
+
+    &:hover {
+      background-color: #e2e8eb;
+    }
+  }
+}
